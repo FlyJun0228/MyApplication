@@ -9,7 +9,7 @@ public class Clothing {
     private long clothingId;
     private String name;
     private String color;
-    private Long clothingTypeId;
+    private long clothingTypeId;
     private Boolean isDirty;
     private Boolean inWash;
     private String imageUri;

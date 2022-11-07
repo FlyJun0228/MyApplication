@@ -5,11 +5,13 @@ import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
 
+import java.util.List;
+@androidx.room.Dao
 public interface ClothingDao {
     @Query("SELECT * FROM clothing WHERE clothingTypeId = :id")
-    void QuerytypeId(Long id);
+    List<Clothing> QuerytypeId(Long id);
     @Query("SELECT * FROM clothing")
-    void Queryclothing();
+    List<Clothing> Queryclothing();
     @Insert()
     void insertClothing(Clothing clothing);
 
